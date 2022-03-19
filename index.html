@@ -8,90 +8,103 @@
     <meta name="keywords" content="cv, resume, Maxim">
     <meta name="description" content="Это сайт - резюме Максима Дронова">
     <title>Maxim Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img width="150" src="./100820_1781.jpg" alt="Моя фотография">
-    <h1>Максим Дронов</h1>
+    <div class="container">
+        <header class="info">
+            <img class="avatar" src="./100820_1781.jpg" alt="Моя фотография">
+            <div class="info-text">
+                <h1>Максим Дронов</h1>
 
-    <p>Я начинающий <strong> веб-разработчик</strong></p>
+                <p>Я начинающий веб-разработчик</p>
 
-    <p>Я люблю <em> путешествия, спорт, автомобили и программирование</em></p>
+                <p>Я люблю <em> путешествия, спорт, автомобили и программирование</em></p>
+                <h4>Список социальных сетей:</h4>
 
-    <h4>Список социальных сетей</h4>
-
-    <a target="_blank" href="../HtmlCssCourse/instagram.html">Instagram</a> |
-    <a target="_blank" href="https://t.me/dronov05">Telegram</a> |
-    <a target="_blank" href="https://www.youtube.com/channel/UCK23RPiq72tENMaKQUP0Zqw">Youtube</a>
-
-    <h2>Мои хобби</h4>
-
-        <ul>
-            <li>Программирование</li>
-            <li>Автомобили</li>
-            <li>Путешествия</li>
-
-        </ul>
-
-        <h2>Опыт работы</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Должность</th>
-                    <th>Год</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Компания</td>
-                    <td>Работник</td>
-                    <td>2000-2005</td>
-                </tr>
-                <tr>
-                    <td>Компания</td>
-                    <td>Работник</td>
-                    <td>2000-2005</td>
-                </tr>
-                <tr>
-                    <td>Компания</td>
-                    <td>Работник</td>
-                    <td>2000-2005</td>
-                </tr>
-                <tr>
-                    <td>Компания</td>
-                    <td>Работник</td>
-                    <td>2000-2005</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2>Связаться со мной</h2>
-
-        <form action="">
-
-            <div>
-                <label for="name">Ваше имя:</label>
-                <input type="text" id="name" placeholder="Введите имя">
-
+                <a target="_blank" href="../HtmlCssCourse/instagram.html">Instagram</a> |
+                <a target="_blank" href="https://t.me/dronov05">Telegram</a> |
+                <a target="_blank" href="https://www.youtube.com/channel/UCK23RPiq72tENMaKQUP0Zqw">Youtube</a>
             </div>
-            <div>
-                <label for="email">Ваш email:</label>
-                <input type="email" name="" placeholder="Введите email" id="email">
+        </header>
+        <section>
+            <article class="card bg-green">
+                <h2>Мои хобби</h4>
 
-            </div>
-            <div>
-                <label for="text">Ваше сообщение:</label> <br>
-                <textarea value="Введите сообщение..." name="text" id="text" cols="30" rows="10"></textarea>
+                    <ul>
+                        <li>Программирование</li>
+                        <li>Автомобили</li>
+                        <li>Путешествия</li>
 
-            </div>
+                    </ul>
+                </h2>
+            </article>
+            <article class="card bg-red">
+
+                <h2>Опыт работы</h2>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Компания</td>
+                            <td>Работник</td>
+                            <td>2000-2005</td>
+                        </tr>
+                        <tr>
+                            <td>Компания</td>
+                            <td>Работник</td>
+                            <td>2005-2010</td>
+                        </tr>
+                        <tr>
+                            <td>Компания</td>
+                            <td>Работник</td>
+                            <td>2010-2015</td>
+                        </tr>
+                        <tr>
+                            <td>Компания</td>
+                            <td>Работник</td>
+                            <td>2015-2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <footer class="footer">
+            <h2>Связаться со мной</h2>
+
+            <form action="">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя...">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" name="" placeholder="Введите email..." id="email">
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label> <br>
+                    <textarea name="text" id="text" placeholder="Введите сообщение..."></textarea>
+
+                </div>
 
 
 
-            <input type="submit" value="Отправить!" name="" id="">
-        </form>
-
+                <input type="submit" class="btn" value="Отправить!" name="" id="">
+            </form>
+        </footer>
+    </div>
 </body>
 
 </html>
